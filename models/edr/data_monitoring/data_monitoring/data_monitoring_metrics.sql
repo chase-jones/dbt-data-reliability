@@ -10,7 +10,8 @@
       "prev_timestamp_column": "updated_at",
       },
     table_type=elementary.get_default_table_type(),
-    incremental_strategy=elementary.get_default_incremental_strategy(),
+    incremental_strategy=elementary.get_default_incremental_strategy()
+    , enabled = (target.type != 'fabric')
   )
 }}
 

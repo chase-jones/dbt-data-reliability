@@ -2,6 +2,7 @@
   config(
     materialized = 'view',
     bind =False
+    , enabled = (target.type != 'fabric')
   )
 }}
 
